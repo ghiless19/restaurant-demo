@@ -1,0 +1,92 @@
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  font-family: sans-serif;
+}
+.restaurant-part{
+  position: relative;
+  margin: 0 auto; /* Center it */
+}
+.restaurant-photo{
+  width: 100%; /* Maximum width */
+ 
+}
+.restaurant-photo:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.restaurant-title{
+  position: absolute; /* Position the background text */
+  top: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgba(0, 0, 0, 0.2); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  height: 99%;
+}
+
+
+  .header {
+    padding: 60px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
+  }
+ 
+  .photo{
+    object-fit:  cover;
+    height: 200px;
+    width: 100%;
+
+    border: 0.25rem  hsl(360, 71%, 66%);
+    border-radius: 0.25rem;
+    display: block;
+  }
+
+
+  .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+  }
+
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container-card {
+   display: inline;
+  }
+  .container-card-name {
+    text-transform: uppercase;
+    text-align: left;
+
+  }
+  .container-card-price {
+    text-align: right;
+  }
+  
+  h1{
+    text-align: center;
+    font-size: 90px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  h2{
+    text-align: center;
+    font-size: 30px;
+  }
+.title {
+  padding: 20px;
+  text-align: center;
+  background: #bb965b;
+  color: rgb(250, 250, 250);
+}  
+ 
