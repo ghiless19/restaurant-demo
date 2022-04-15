@@ -1,12 +1,12 @@
 import * as React from 'react'
-import ItemsQuery from "./itemsQuery"
+import Query from "./Query"
 import {containerCard, containerCardName, containerCardDesc, containerCardPrice, card, container, photo} from "./layout.module.css" 
 
 
 const Menu = () => { 
   return (    
     <div>    
-      <ItemsQuery>
+      <Query>
       {({ data: { items } }) => {
           return (
       <div className={container}>
@@ -40,7 +40,7 @@ const Menu = () => {
         }
           </div>
           )}}
-         </ItemsQuery>     
+         </Query>     
     </div>
     )
 }
