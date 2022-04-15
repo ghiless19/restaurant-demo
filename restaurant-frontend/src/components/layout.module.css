@@ -3,94 +3,105 @@
   grid-template-columns: auto auto auto auto;
   font-family: sans-serif;
 }
-.restaurant-part{
+
+.restaurant-part {
   position: relative;
-  margin: 0 auto; /* Center it */
+  margin: 0 auto;
+  /* Center it */
   text-align: center;
 }
-.restaurant-photo{
+
+.restaurant-photo {
   width: 60%;
 }
+
 .restaurant-photo:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.restaurant-title{
-  position: relative; /* Position the background text */
-  top: 0; /* At the bottom. Use top:0 to append it to the top */
-  background: rgba(114, 55, 55, 0.2); /* Black background with 0.5 opacity */
-  color: #fc1010; /* Grey text */
- 
+.restaurant-title {
+  position: relative;
+  /* Position the background text */
+  top: 0;
+  /* At the bottom. Use top:0 to append it to the top */
+  background: rgba(114, 55, 55, 0.2);
+  /* Black background with 0.5 opacity */
+  color: #fc1010;
+  /* Grey text */
+
 }
 
 
-  .header {
-    padding: 60px;
-    text-align: center;
-    background: #1abc9c;
-    color: rgb(170, 83, 83);
-    font-size: 30px;
-  }
- 
-  .photo{
-    object-fit:cover;
-    max-width: 100%;
-    height: auto;
-    border: 0.25rem  hsl(360, 71%, 66%);
-    border-radius: 0.25rem;
-    display: block;
-  }
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: rgb(170, 83, 83);
+  font-size: 30px;
+}
+
+.photo {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  border: 0.25rem hsl(360, 71%, 66%);
+  border-radius: 0.25rem;
+  display: block;
+}
 
 
-  .card {
-    /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 75%;
-    height: auto;
-  }
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
 
-  
-  /* On mouse-over, add a deeper shadow */
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-  
-  /* Add some padding inside the card container */
-  .container-card {
-    margin-top: 20px;
-   display: contents;
-  }
-  .container-card-name {
-    text-transform: uppercase;
-    float: left;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  height: auto;
+}
 
-  }
-  .container-card-price {
-    float: right;
-  }
-  .container-card-desc {
-    float: left;
-  }
-  
-  h1{
-    text-align: center;
-    font-size: 70px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
-  h2{
-    text-align: center;
-    font-size: 30px;
-  }
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.container-card {
+  margin-top: 20px;
+  display: contents;
+}
+
+.container-card-name {
+  text-transform: uppercase;
+  float: left;
+
+}
+
+.container-card-price {
+  float: right;
+}
+
+.container-card-desc {
+  float: left;
+}
+
+h1 {
+  text-align: center;
+  font-size: 70px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
 .title {
   padding: 20px;
   text-align: center;
   background: #bb965b;
   color: rgb(250, 250, 250);
-}  
-
- 
+}

@@ -1,16 +1,17 @@
-import React from "react";
-import { restaurantPart, restaurantTitle, restaurantPhoto} from "./layout.module.css" 
-import restaurant from "../images/restaurant2.png"
+import React from "react"
+import Menu from './menu';
+import Header from './header';
 
 const Layout = () => {
     return (
-        <div>
-        <div className={restaurantPart}>
-            <h1 className={restaurantTitle}>Welcome to MultiCuisine</h1>
-            <img src={restaurant} alt='restaurant' className={restaurantPhoto}/>
-        </div>
-        <h2>Menu List</h2> 
-        </div>
+        <main>
+            <header>
+                <Header />
+            </header>
+            <body>
+                <Menu />
+            </body>
+        </main>
     )
 }
 export default Layout
