@@ -1,49 +1,48 @@
 import * as React from 'react'
+import ItemsQuery from "./itemsQuery"
+import {containerCard, containerCardName, containerCardDesc, containerCardPrice, card, container, photo} from "./layout.module.css" 
 
-import itemsList from '../components/itemList';
-import {containerCard, containerCardName, containerCardPrice, card, container, photo} from "../components/layout.module.css" 
-const Menu = () => {
-    return (
-        <div className={container}>
-          
-        {itemsList.map(({id, name, price, path, desc}) => {
-            return(
-              <div className={card}>
-                <h4 key={id}>
-                  <div>
-                 
-                  <div>
-                    <img src={path} alt={name} className={photo} />
-                  </div>
+
+const Menu = () => { 
+  return (    
+    <div>    
+      <ItemsQuery>
+      {({ data: { items } }) => {
+          return (
+      <div className={container}>
+        {items.data.map((item) => (
+          <div  key={item.id} >
+                  <div className={card}>
+                    <div >
+                      <img src={"http://localhost:1337" + item.attributes.image.data.attributes.url} alt={item.attributes.name} className={photo}/>
+                    </div>
                     
                     <div className={containerCard}>
-                      <div className={containerCard}>
+                      <div>
                         <div  className={containerCardName}>
-                          {name}
-                        </div>
-                      
-                        <div className={containerCardPrice}> 
-                          {price} $
+                              {item.attributes.name}
                         </div>  
-                      </div>
-                      <p>
-                        <div>
-                          {desc}
+                        <div  className={containerCardPrice}>
+                              {item.attributes.price} $
+                        </div>  
                         </div>
-                      </p>
+                      <div className={containerCardDesc}>
+                        <p>
+                            {item.attributes.description}
+                        </p>
+                      </div> 
                     </div>
-                  
+  
                   </div>  
-                </h4>
+                
               </div>
-
-            )
-           
-            }
-            )
-          }
+              ))
+        }
           </div>
-    
+          )}}
+         </ItemsQuery>     
+    </div>
     )
 }
+
 export default Menu
